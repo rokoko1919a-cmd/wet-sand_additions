@@ -107,6 +107,19 @@ public interface Wettable {
         }
     }
 
+    static void tickCompatBlock(BlockState state, ServerLevel world, BlockPos pos) {
+    Block increased = COMPAT_INCREASES.get(state.getBlock());
+    if (increased == null) return;
+    BlockPos[] adjacent = { pos.north(), pos.south(), pos.east(), pos.west(), pos.above(), pos.below() };
+    for (BlockPos conditionPos : adjacent) {
+        if (world.getFluidState(conditionPos).is(Fluids.WATER) ||
+            world.getFluidState(conditionPos).is(Fluids.FLOWING_WATER)) {
+            world.setBlockAndUpdate(pos, increased.defaultBlockState());
+            return;
+        }
+    }
+}
+
     // MODIFY — now also checks the compat map
     static Optional<Block> getDecreasedHumidityBlock(Block block) {
         Block result = (Block) HUMIDITY_LEVEL_DECREASES.get().get(block);

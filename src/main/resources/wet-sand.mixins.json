@@ -6,7 +6,8 @@
     "block.BlockEntityTypeMixin",
     "block.BrushableBlockEntityMixin",
     "block.RegistryMixin",
-    "block.SugarCaneBlockMixin"
+    "block.SugarCaneBlockMixin",
+    "block.MixinServerLevel"
   ],
   "injectors": {
     "defaultRequire": 1

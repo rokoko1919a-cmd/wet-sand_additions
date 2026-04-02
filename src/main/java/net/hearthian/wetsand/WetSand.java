@@ -20,7 +20,6 @@ public class WetSand implements ModInitializer {
         initBlockItems();
         initCreativePlacement();
 
-        // ADD — only runs if BoP is present
         if (FabricLoader.getInstance().isModLoaded("biomesoplenty")) {
             BoPCompat.init();
         }

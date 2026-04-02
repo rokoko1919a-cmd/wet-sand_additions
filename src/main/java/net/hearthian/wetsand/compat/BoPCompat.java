@@ -44,8 +44,8 @@ public class BoPCompat {
 
         // --- White sand ---
         MOIST_WHITE_SAND  = new WettableFallingBlock(Wettable.HumidityLevel.MOIST,  props(bopWhiteSand,  "moist_white_sand"));
-        WET_WHITE_SAND    = new WettableBlock(       Wettable.HumidityLevel.WET,    props(bopWhiteSand,  "wet_white_sand").mapColor(MapColor.COLOR_LIGHT_GRAY));
-        SOAKED_WHITE_SAND = new SoakedBlock(                                         props(bopWhiteSand,  "soaked_white_sand").mapColor(MapColor.COLOR_LIGHT_GRAY));
+        WET_WHITE_SAND    = new WettableBlock(       Wettable.HumidityLevel.WET,    props(bopWhiteSand,  "wet_white_sand").mapColor(MapColor.WOOL));
+        SOAKED_WHITE_SAND = new SoakedBlock(                                         props(bopWhiteSand,  "soaked_white_sand").mapColor(MapColor.WOOL));
 
         // --- Black sand ---
         MOIST_BLACK_SAND  = new WettableFallingBlock(Wettable.HumidityLevel.MOIST,  props(bopBlackSand,  "moist_black_sand"));
@@ -54,8 +54,8 @@ public class BoPCompat {
 
         // --- Orange sand ---
         MOIST_ORANGE_SAND  = new WettableFallingBlock(Wettable.HumidityLevel.MOIST, props(bopOrangeSand, "moist_orange_sand"));
-        WET_ORANGE_SAND    = new WettableBlock(       Wettable.HumidityLevel.WET,   props(bopOrangeSand, "wet_orange_sand").mapColor(MapColor.TERRACOTTA_ORANGE));
-        SOAKED_ORANGE_SAND = new SoakedBlock(                                        props(bopOrangeSand, "soaked_orange_sand").mapColor(MapColor.TERRACOTTA_ORANGE));
+        WET_ORANGE_SAND    = new WettableBlock(       Wettable.HumidityLevel.WET,   props(bopOrangeSand, "wet_orange_sand").mapColor(MapColor.DIRT));
+        SOAKED_ORANGE_SAND = new SoakedBlock(                                        props(bopOrangeSand, "soaked_orange_sand").mapColor(MapColor.DIRT));
 
         // Register all 9 blocks + items
         registerBlockItem("moist_white_sand",   MOIST_WHITE_SAND);

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "wet-sand:wet_sand",
+  "result": {
+    "id": "minecraft:sand"
+  },
+  "experience": 0.1,
+  "cookingtime": 50
+}

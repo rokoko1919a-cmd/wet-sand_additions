@@ -1,0 +1,20 @@
+{
+  "block.wet-sand.moist_sand": "Sable humide",
+  "block.wet-sand.moist_white_sand": "Sable blanc humide",
+  "block.wet-sand.moist_orange_sand": "Sable orange humide",
+  "block.wet-sand.moist_red_sand": "Sable rouge humide",
+  "block.wet-sand.moist_black_sand": "Sable noir humide",
+  "block.wet-sand.moist_suspicious_sand": "Sable suspect humide",
+  "block.wet-sand.wet_sand": "Sable mouillé",
+  "block.wet-sand.wet_white_sand": "Sable blanc mouillé",
+  "block.wet-sand.wet_orange_sand": "Sable orange mouillé",
+  "block.wet-sand.wet_red_sand": "Sable rouge mouillé",
+  "block.wet-sand.wet_black_sand": "Sable noir mouillé",
+  "block.wet-sand.wet_suspicious_sand": "Sable suspect mouillé",
+  "block.wet-sand.soaked_sand": "Sable trempé",
+  "block.wet-sand.soaked_white_sand": "Sable blanc trempé",
+  "block.wet-sand.soaked_orange_sand": "Sable orange trempé",
+  "block.wet-sand.soaked_red_sand": "Sable rouge trempé",
+  "block.wet-sand.soaked_black_sand": "Sable noir trempé",
+  "block.wet-sand.soaked_suspicious_sand": "Sable suspect trempé"
+}

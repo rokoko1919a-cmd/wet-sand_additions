@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "wet-sand:moist_orange_sand",
+  "result": {
+    "id": "biomesoplenty:orange_sand"
+  },
+  "experience": 0.1,
+  "cookingtime": 25
+}

@@ -33,10 +33,10 @@ public class initializer {
     );
     public static final Block WET_SAND = new WettableBlock(
             Wettable.HumidityLevel.WET,
-            BlockBehaviour.Properties.ofFullCopy(SAND).mapColor(MapColor.TERRACOTTA_YELLOW).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "wet_sand")))
+            BlockBehaviour.Properties.ofFullCopy(SAND).mapColor(MapColor.RAW_IRON).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "wet_sand")))
     );
     public static final Block SOAKED_SAND = new SoakedBlock(
-            BlockBehaviour.Properties.ofFullCopy(SAND).mapColor(MapColor.TERRACOTTA_YELLOW).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "soaked_sand")))
+            BlockBehaviour.Properties.ofFullCopy(SAND).mapColor(MapColor.RAW_IRON).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "soaked_sand")))
     );
     public static final Block RED_SAND = new WettableFallingBlock(
             Wettable.HumidityLevel.UNAFFECTED,
@@ -48,10 +48,10 @@ public class initializer {
     );
     public static final Block WET_RED_SAND = new WettableBlock(
             Wettable.HumidityLevel.WET,
-            BlockBehaviour.Properties.ofFullCopy(RED_SAND).mapColor(MapColor.TERRACOTTA_RED).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "wet_red_sand")))
+            BlockBehaviour.Properties.ofFullCopy(RED_SAND).mapColor(MapColor.TERRACOTTA_ORANGE).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "wet_red_sand")))
     );
     public static final Block SOAKED_RED_SAND = new SoakedBlock(
-            BlockBehaviour.Properties.ofFullCopy(RED_SAND).mapColor(MapColor.TERRACOTTA_RED).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "soaked_red_sand")))
+            BlockBehaviour.Properties.ofFullCopy(RED_SAND).mapColor(MapColor.TERRACOTTA_ORANGE).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "soaked_red_sand")))
     );
 
     public static final Block SUSPICIOUS_SAND = new WettableBrushableBlock(

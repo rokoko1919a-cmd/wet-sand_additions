@@ -12,6 +12,18 @@
     "minecraft:red_sand",
     "wet-sand:moist_red_sand",
     "wet-sand:wet_red_sand",
-    "wet-sand:soaked_red_sand"
+    "wet-sand:soaked_red_sand",
+    { "id": "biomesoplenty:white_sand", "required": false },
+    { "id": "biomesoplenty:orange_sand", "required": false },
+    { "id": "biomesoplenty:black_sand", "required": false },
+    { "id": "wet-sand:moist_white_sand", "required": false },
+    { "id": "wet-sand:wet_white_sand", "required": false },
+    { "id": "wet-sand:soaked_white_sand", "required": false },
+    { "id": "wet-sand:moist_black_sand", "required": false },
+    { "id": "wet-sand:wet_black_sand", "required": false },
+    { "id": "wet-sand:soaked_black_sand", "required": false },
+    { "id": "wet-sand:moist_orange_sand", "required": false },
+    { "id": "wet-sand:wet_orange_sand", "required": false },
+    { "id": "wet-sand:soaked_orange_sand", "required": false }
   ]
 }

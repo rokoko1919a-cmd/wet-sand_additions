@@ -6,6 +6,12 @@
     "wet-sand:wet_suspicious_sand",
     "wet-sand:soaked_suspicious_sand",
     "wet-sand:wet_red_sand",
-    "wet-sand:soaked_red_sand"
+    "wet-sand:soaked_red_sand",
+    { "id": "wet-sand:wet_white_sand", "required": false },
+    { "id": "wet-sand:soaked_white_sand", "required": false },
+    { "id": "wet-sand:wet_black_sand", "required": false },
+    { "id": "wet-sand:soaked_black_sand", "required": false },
+    { "id": "wet-sand:wet_orange_sand", "required": false },
+    { "id": "wet-sand:soaked_orange_sand", "required": false }
   ]
 }
