@@ -28,6 +28,15 @@ public class WettableFallingBlock extends FallingBlock implements Wettable {
         this.humidityLevel = humidityLevel;
     }
 
+    @Override
+public void setPlacedBy(@NotNull net.minecraft.world.level.Level level, @NotNull BlockPos pos, 
+                        @NotNull BlockState state,
+                        @org.jetbrains.annotations.Nullable net.minecraft.world.entity.LivingEntity placer,
+                        net.minecraft.world.item.ItemStack stack) {
+    super.setPlacedBy(level, pos, state, placer, stack);
+    handleNetherPlacement(level, pos, state);
+}
+
     protected void randomTick(@NotNull BlockState state, @NotNull ServerLevel world, @NotNull BlockPos pos, @NotNull RandomSource random) {
         this.tickHumidity(state, world, pos);
     }

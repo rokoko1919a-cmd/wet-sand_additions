@@ -1,8 +1,10 @@
 package net.hearthian.wetsand.blocks;
-
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.pathfinder.PathComputationType;
@@ -10,6 +12,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class SoakedBlock extends Block implements Wettable {
     public static final MapCodec<SoakedBlock> CODEC = simpleCodec(SoakedBlock::new);
@@ -22,6 +25,13 @@ public class SoakedBlock extends Block implements Wettable {
 
     public SoakedBlock(Properties settings) {
         super(settings);
+    }
+
+    @Override
+    public void setPlacedBy(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state,
+                            @Nullable LivingEntity placer, @NotNull ItemStack stack) {
+        super.setPlacedBy(level, pos, state, placer, stack);
+        handleNetherPlacement(level, pos, state);
     }
 
     @Override
@@ -49,6 +59,7 @@ public class SoakedBlock extends Block implements Wettable {
         return 0.2F;
     }
 
+    @Override
     public HumidityLevel getHumidityLevel() {
         return HumidityLevel.SOAKED;
     }

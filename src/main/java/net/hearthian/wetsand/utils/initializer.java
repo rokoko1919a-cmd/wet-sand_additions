@@ -33,10 +33,10 @@ public class initializer {
     );
     public static final Block WET_SAND = new WettableBlock(
             Wettable.HumidityLevel.WET,
-            BlockBehaviour.Properties.ofFullCopy(SAND).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "wet_sand")))
+            BlockBehaviour.Properties.ofFullCopy(SAND).mapColor(MapColor.TERRACOTTA_YELLOW).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "wet_sand")))
     );
     public static final Block SOAKED_SAND = new SoakedBlock(
-            BlockBehaviour.Properties.ofFullCopy(SAND).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "soaked_sand")))
+            BlockBehaviour.Properties.ofFullCopy(SAND).mapColor(MapColor.TERRACOTTA_YELLOW).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "soaked_sand")))
     );
     public static final Block RED_SAND = new WettableFallingBlock(
             Wettable.HumidityLevel.UNAFFECTED,
@@ -48,10 +48,10 @@ public class initializer {
     );
     public static final Block WET_RED_SAND = new WettableBlock(
             Wettable.HumidityLevel.WET,
-            BlockBehaviour.Properties.ofFullCopy(RED_SAND).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "wet_red_sand")))
+            BlockBehaviour.Properties.ofFullCopy(RED_SAND).mapColor(MapColor.TERRACOTTA_RED).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "wet_red_sand")))
     );
     public static final Block SOAKED_RED_SAND = new SoakedBlock(
-            BlockBehaviour.Properties.ofFullCopy(RED_SAND).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "soaked_red_sand")))
+            BlockBehaviour.Properties.ofFullCopy(RED_SAND).mapColor(MapColor.TERRACOTTA_RED).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "soaked_red_sand")))
     );
 
     public static final Block SUSPICIOUS_SAND = new WettableBrushableBlock(
@@ -64,11 +64,11 @@ public class initializer {
     );
     public static final Block WET_SUSPICIOUS_SAND = new WettableBrushableBlock(
             Wettable.HumidityLevel.WET, WET_SAND, SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND,
-            BlockBehaviour.Properties.ofFullCopy(SUSPICIOUS_SAND).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "wet_suspicious_sand")))
+            BlockBehaviour.Properties.ofFullCopy(SUSPICIOUS_SAND).mapColor(MapColor.TERRACOTTA_WHITE).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "wet_suspicious_sand")))
     );
     public static final Block SOAKED_SUSPICIOUS_SAND = new SoakedBrushableBlock(
             SOAKED_SAND, SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND,
-            BlockBehaviour.Properties.ofFullCopy(SUSPICIOUS_SAND).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "soaked_suspicious_sand")))
+            BlockBehaviour.Properties.ofFullCopy(SUSPICIOUS_SAND).mapColor(MapColor.TERRACOTTA_WHITE).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, "soaked_suspicious_sand")))
     );
 
     private static void registerBlockItem(String path, Block block) {
